@@ -5,6 +5,38 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
+  <div class="container">
+      <div class="score-panel">
+        <div class="score-display">
+          <div>
+            <h1 id="score">0</h1>
+          </div>
+          <div class="game-status">
+            <button
+              type="button"
+              id="status"
+              value="Start"
+              onclick="changeStatus()"
+            >
+              Start
+            </button>
+          </div>
+        </div>
+        <div style="width: 100%">
+          <input
+            id="speed"
+            name="speed"
+            type="range"
+            min="10"
+            max="100"
+            value="50"
+            onChange="updateSpeed(event)"
+          />
+          <label for="speed">Speed</label>
+        </div>
+      </div>
+      <div class="game-area" id="game-area"></div>
+    </div>
   <script src="/index.js"></script>
 </body>
 </html>

@@ -1,0 +1,38 @@
+.container {
+  width: 480px;
+  margin: auto;
+}
+.score-panel {
+  border: 3px solid black;
+  padding: 9px;
+  text-align: center;
+  display: grid;
+}
+.game-area {
+  position: relative;
+  border: 3px solid black;
+  min-height: 500px;
+  padding: 9px;
+  overflow: hidden;
+}
+.score-display {
+  display: grid;
+  grid-template-columns: 70% 30%;
+}
+.ball {
+  position: absolute;
+  top: 0px;
+  border-radius: 50%;
+  border: 2px solid;
+}
+.game-status {
+  align-self: center;
+}
+@keyframes slide-ball {
+  0% {
+    top: 0px;
+  }
+  100% {
+    top: 500px;
+  }
+}
